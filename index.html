@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Browser Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="main-menu" class="screen active">
+            <div class="logo">
+                <h1>Minecraft</h1>
+                <span class="edition">Browser Edition</span>
+            </div>
+            <div class="menu">
+                <button id="singleplayer-btn" class="menu-button">Singleplayer</button>
+                <button class="menu-button disabled">Multiplayer</button>
+                <button class="menu-button disabled">Options</button>
+                <button class="menu-button disabled">Quit</button>
+            </div>
+            <div class="footer">
+                <span>Minecraft Browser Clone</span>
+            </div>
+        </div>
+
+        <div id="world-select" class="screen">
+            <div class="screen-header">
+                <h2>Select World</h2>
+                <button id="back-to-menu-btn" class="back-button">Back to Menu</button>
+            </div>
+            <div class="world-list">
+                <div class="world-list-empty">
+                    <p>No worlds yet</p>
+                </div>
+            </div>
+            <div class="world-actions">
+                <button id="create-world-btn" class="action-button">Create New World</button>
+            </div>
+        </div>
+
+        <div id="game-world" class="screen">
+            <div class="game-overlay">
+                <p>World loading...</p>
+                <button id="exit-world-btn" class="action-button">Exit to Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
